@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -5,8 +6,8 @@ import java.util.List;
 public class IntersectionOfArray {
     public static void main(String[] args) {
 
-        int[] arr1 = {4,9,5};
-        int[] arr2 = {9,4,9,8,4};
+        int[] arr1 = {1,2,2,1};
+        int[] arr2 = {2,2};
         System.out.println(Arrays.toString(intersection(arr1,arr2)));
     }
 
