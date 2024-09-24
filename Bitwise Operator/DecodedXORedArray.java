@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class DecodedXORedarray {
+public class DecodedXORedArray {
     public static void main(String[] args) {
         int[] arr = {6,2,7,3};
         int first = 4;
