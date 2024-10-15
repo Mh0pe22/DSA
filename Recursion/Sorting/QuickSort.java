@@ -24,6 +24,7 @@ public class QuickSort {
         while(s <= e){
 
             while(arr[s] < pivot){
+                
                 s++;
             }
 
