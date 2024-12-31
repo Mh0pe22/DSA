@@ -3,6 +3,11 @@ import java.util.Arrays;
 public class CountWaysToBuildGoodString {
     public static void main(String[] args) {
 
+        int low = 3;
+        int high = 3;
+        int zero = 1;
+        int one = 2;
+        System.out.println(countGoodString(low , high , zero , one));
     }
 
     public static  int L , H , Z , O;
