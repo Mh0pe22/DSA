@@ -6,7 +6,6 @@ public class FindAnElementInAContaminatedBinaryTree {
     private Stack<Integer> st;
 
     public static void main(String[] args) {
-        // Properly initialize the tree
         TreeNode root = new TreeNode();
         root.left = new TreeNode();
         root.right = new TreeNode();
@@ -17,7 +16,7 @@ public class FindAnElementInAContaminatedBinaryTree {
         root.right.right = new TreeNode();
         FindAnElementInAContaminatedBinaryTree tree = new FindAnElementInAContaminatedBinaryTree(root);
 
-        System.out.println(tree.find(1)); // Expected Output: true or false
+        System.out.println(tree.find(1));
     }
 
     public static class TreeNode {
@@ -53,6 +52,17 @@ public class FindAnElementInAContaminatedBinaryTree {
                 que.add(temp.right);
             }
         }
+    }
+
+    private void dfs(TreeNode root , int x){
+        if(root == null)
+            return;
+
+        root.val = x;
+        st.add(x);
+        dfs(root.left , 2 * x + 1);
+        dfs(root.right , 2 * x + 2);
+
     }
 
     public FindAnElementInAContaminatedBinaryTree(TreeNode root) {
