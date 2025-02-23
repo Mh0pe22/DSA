@@ -1,5 +1,5 @@
 public class RecoverATreeFromPreorderTraversal {
-    public static void main(String[] args) {
+    public void main(String[] args) {
         String traversal = "1-2--3--4-5--6--7";
         TreeNode root = recoverFromPreorder(traversal);
     }
@@ -18,13 +18,13 @@ public class RecoverATreeFromPreorderTraversal {
   }
 
   private static int n;
-  public static TreeNode recoverFromPreorder(String traversal){
+  public  TreeNode recoverFromPreorder(String traversal){
         n = traversal.length();
         int[] index = {0};
         return solve(traversal , index , 0);
   }
 
-  public static TreeNode solve(String traversal , int[] index , int depth){
+  public TreeNode solve(String traversal, int[] index, int depth){
     if(index[0] >= n){
         return null;
     }
