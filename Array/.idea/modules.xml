@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Array.iml" filepath="$PROJECT_DIR$/Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSU/DSU.iml" filepath="$PROJECT_DIR$/DSU/DSU.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hard/Hard.iml" filepath="$PROJECT_DIR$/Hard/Hard.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiSourceBFS/MultiSourceBFS.iml" filepath="$PROJECT_DIR$/MultiSourceBFS/MultiSourceBFS.iml" />
     </modules>
