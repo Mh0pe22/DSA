@@ -4,10 +4,10 @@ public class LargestColorValueInADirectedGraph {
     public static void main(String[] args) {
         String colors = "abaca";
         int[][] edges = {
-                {0 ,1},
+                {0 , 1},
                 {0 , 2},
-                {2, 3},
-                {3, 4}
+                {2 , 3},
+                {3 , 4}
         };
         System.out.println(largestPathValue(colors , edges));
     }
