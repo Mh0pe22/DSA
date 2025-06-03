@@ -10,6 +10,7 @@ public class GreddyCandy {
         int candy = n;
 
         while(i < n){
+            
 
             if(ratings[i] == ratings[i - 1]){
                 i++;
