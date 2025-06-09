@@ -3,7 +3,7 @@ public class MaximizeNumberOfNiceDivisor {
 
     }
 
-    public static int maxNiceDivisor(int primeFactors){
-        
-    }
+//    public static int maxNiceDivisor(int primeFactors){
+//
+//    }
 }
