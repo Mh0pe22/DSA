@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class FindOriginalTypedString2 {
@@ -65,4 +66,5 @@ public class FindOriginalTypedString2 {
 
         return (int)(P - invalidCount + M) % M;
     }
+
 }
