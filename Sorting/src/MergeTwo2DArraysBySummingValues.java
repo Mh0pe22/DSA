@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class MergeTwo2DArraysBySummingValues {
-    public static void main(String[] args) {
+    public static <String> void main(String[] args) {
         int[][] nums1 = {
                 {1 , 2},
                 {2, 4},
