@@ -38,7 +38,6 @@ public class RescheduleMeetingForMaximumFreeTime {
             maxSum = Math.max(maxSum , currSum);
             j++;
         }
-
         return maxSum;
     }
 }
