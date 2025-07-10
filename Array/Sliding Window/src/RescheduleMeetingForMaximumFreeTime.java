@@ -28,10 +28,10 @@ public class RescheduleMeetingForMaximumFreeTime {
         int n = freeArray.size();
 
         while(j < n){
-            currSum  += freeArray.get(i);
+            currSum  += freeArray.get(j);
 
             if(i < n && j - i + 1 > k + 1){
-                currSum -= freeArray.get(j);
+                currSum -= freeArray.get(i);
                 i++;
             }
 
