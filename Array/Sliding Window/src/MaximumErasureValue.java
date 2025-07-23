@@ -1,4 +1,6 @@
+import java.io.Serializable;
 import java.util.HashMap;
+import java.util.function.Function;
 
 public class MaximumErasureValue {
     public static void main(String[] args) {
@@ -27,5 +29,15 @@ public class MaximumErasureValue {
         }
 
         return Math.max(ans , sum);
+    }
+
+    public void interfaces(){
+        Function<String , String > function = new Function<String, String>() {
+            @Override
+            public String apply(String s) {
+                return "Hello " + s;
+            }
+        };
+        
     }
 }
