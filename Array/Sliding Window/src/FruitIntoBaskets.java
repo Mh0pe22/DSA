@@ -1,0 +1,29 @@
+import java.util.HashMap;
+
+public class FruitIntoBaskets {
+    public static void main(String[] args) {
+        int[] fruits = {1 ,2 , 3 , 2, 2};
+        System.out.println(totalFruits(fruits));
+    }
+
+    public static int totalFruits(int[] fruits){
+        HashMap<Integer , Integer> mp = new HashMap<>();
+        int i = 0;
+        int maxFruits = 0;
+
+        for (int j = 0; j < fruits.length; j++) {
+            mp.put(fruits[j] , mp.getOrDefault(fruits[j] , 0) + 1);
+
+            while (mp.size() > 2){
+                mp.put(fruits[i] , mp.get(fruits[i]) - 1);
+                if(mp.get(fruits[i]) == 0){
+                    mp.remove(fruits[i]);
+                }
+                i++;
+            }
+             maxFruits = Math.max(maxFruits , j - i + 1);
+        }
+
+        return maxFruits;
+    }
+}
