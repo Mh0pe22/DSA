@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/DSU/DSU.iml" filepath="$PROJECT_DIR$/DSU/DSU.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hard/Hard.iml" filepath="$PROJECT_DIR$/Hard/Hard.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiSourceBFS/MultiSourceBFS.iml" filepath="$PROJECT_DIR$/MultiSourceBFS/MultiSourceBFS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SegmentTree/SegmentTree.iml" filepath="$PROJECT_DIR$/SegmentTree/SegmentTree.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sliding Window/Sliding Window.iml" filepath="$PROJECT_DIR$/Sliding Window/Sliding Window.iml" />
     </modules>
   </component>
