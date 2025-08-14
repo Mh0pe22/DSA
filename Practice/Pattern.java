@@ -1,12 +1,12 @@
 public class Pattern {
     public static void main(String[] args) {
 
-        int n = 7;
+        int n = 4;
 //        pattern1(n);
 //        pattern2(n);
 //        pattern3(n);
 //        pattern4(n);
-        pattern28(n);
+        pattern(n);
     }
 
     static void pattern1(int n){
@@ -61,6 +61,27 @@ public class Pattern {
             for (int j = 1; j <= totalCol ; j++) {
                 System.out.print("* ");
             }
+            System.out.println();
+        }
+    }
+
+    /*
+    1    1
+    12  21
+    123321
+     */
+    static void pattern(int n){
+        String s = "";
+        for (int i = 0; i < n; i++) {
+            s = s + Integer.toString(i + 1);
+            System.out.print(s);
+            int space = (n * 2) - ((i + 1) * 2);
+            for (int j = 0; j < space; j++) {
+                System.out.print(" ");
+            }
+
+            StringBuilder rev = new StringBuilder(s).reverse();
+            System.out.print(rev);
             System.out.println();
         }
     }

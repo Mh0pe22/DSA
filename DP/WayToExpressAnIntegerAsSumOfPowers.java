@@ -27,13 +27,13 @@ public class WayToExpressAnIntegerAsSumOfPowers {
             return 0;
         }
 
-        if(dp[n][num] != -1){
-            return dp[n][num];
-        }
-
         int currentPower = (int)Math.pow(num , x);
         if(currentPower > n){
             return 0;
+        }
+
+        if(dp[n][num] != -1){
+            return dp[n][num];
         }
 
         int take = solve(n - currentPower , num + 1 , x);
